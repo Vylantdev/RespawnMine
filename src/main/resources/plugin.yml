@@ -1,0 +1,9 @@
+name: RespawnMine
+version: '${version}'
+main: be.gsnauw.respawnmine.RespawnMine
+api-version: '1.20'
+prefix: RespawnMine
+depend: [WorldGuard]
+authors: [Gilles]
+description: A plugin that allows you to make mines where ores get replaced after some time when mined.
+website: www.gsnauw.be
