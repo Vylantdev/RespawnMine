@@ -6,12 +6,11 @@ public final class RespawnMine extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        getLogger().info("The plugin has started, Hello World!");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("The plugin has been disabled, goodbye!");
     }
 }
