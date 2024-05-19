@@ -3,7 +3,7 @@ package be.gsnauw.respawnmine;
 import be.gsnauw.respawnmine.commands.ResMineCommand;
 import be.gsnauw.respawnmine.commands.TestCommand;
 import be.gsnauw.respawnmine.configs.DefaultConfig;
-import be.gsnauw.respawnmine.configs.languages.ENConfig;
+import be.gsnauw.respawnmine.listeners.BlockListener;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,6 +25,7 @@ public final class RespawnMine extends JavaPlugin {
         getLogger().info("The plugin has started, Hello World!");
         Objects.requireNonNull(this.getCommand("respawnmine")).setExecutor(new ResMineCommand());
         Objects.requireNonNull(this.getCommand("test")).setExecutor(new TestCommand());
+        getServer().getPluginManager().registerEvents(new BlockListener(), this);
     }
 
     @Override

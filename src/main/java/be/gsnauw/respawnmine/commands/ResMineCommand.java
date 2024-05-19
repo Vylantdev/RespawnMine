@@ -1,5 +1,6 @@
 package be.gsnauw.respawnmine.commands;
 
+import be.gsnauw.respawnmine.RespawnMine;
 import be.gsnauw.respawnmine.utils.Region;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -21,13 +22,8 @@ public class ResMineCommand implements CommandExecutor{
         }
 
         if (args.length == 0) {
-
-            if (Region.check(player)) {
-                player.sendMessage("true");
-            }
-            else {
-                player.sendMessage("false");
-            }
+            RespawnMine.getInstance().getDefaultConfig().reload();
+            player.sendMessage("hey");
         }
         return true;
     }

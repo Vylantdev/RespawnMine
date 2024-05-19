@@ -143,14 +143,14 @@ public final class DefaultConfig {
 
 
     public Map<String, Map<String, String>> regions = new MapBuilder<String, Map<String, String>>()
-            .put("Eosmine", new MapBuilder<String, String>()
+            .put("eosmine", new MapBuilder<String, String>()
                     .put("DIAMOND_ORE", "5m")
                     .put("GOLD_ORE", "2m")
                     .put("DEEPSLATE_GOLD_ORE", "2m")
                     .put("DEEPSLATE_DIAMOND_ORE", "2m")
                     .put("DEEPSLATE_EMERALD_ORE", "2m")
                     .build())
-            .put("Anderemine", new MapBuilder<String, String>()
+            .put("anderemine", new MapBuilder<String, String>()
                     .put("DIAMOND_ORE", "5m")
                     .put("EMERALD_ORE", "5m")
                     .build())
