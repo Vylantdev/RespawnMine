@@ -8,17 +8,30 @@ authors: [Gilles]
 description: A plugin that allows you to make mines where ores get replaced after some time when mined.
 website: www.gsnauw.be
 commands:
-  test:
-    description: hoi
-    permission: respawnmine.use
   respawnmine:
     description: The main RespawnMine command.
     permission: respawnmine.use
     aliases:
       - rm
+
 permissions:
   respawnmine.add:
     description: The RespawnMine add permission.
+    default: op
+    children:
+      respawnmine.use: true
+  respawnmine.remove:
+    description: The RespawnMine remove permission.
+    default: op
+    children:
+      respawnmine.use: true
+  respawnmine.list:
+    description: The RespawnMine list permission.
+    default: op
+    children:
+      respawnmine.use: true
+  respawnmine.reload:
+    description: The RespawnMine reload permission.
     default: op
     children:
       respawnmine.use: true
