@@ -23,7 +23,7 @@ import static be.gsnauw.respawnmine.configs.RegionConfig.RegCon;
 public class ResMineCommand implements CommandExecutor, TabCompleter {
 
     private final List<String> COMMANDS = Arrays.asList("add", "remove", "list", "reload", "help");
-    String commands = "<add | remove | list | reload | help> <name>";
+    String commands = "/rm <add | remove | list | reload | help> <name>";
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {

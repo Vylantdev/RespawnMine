@@ -62,6 +62,7 @@ public class BlockListener implements Listener {
             TimeConvert.convertTime(blockValue);
 
             brokenBlocks.put(blockLocation, new BrokenBlockData(brokenBlock, blockValue));
+            StoreBlock.store(brokenBlock, blockLocation);
         }
     }
 }
